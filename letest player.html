@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <link rel="icon" href="https://i.ibb.co/wrJp3Py/IMG-20231013-133812-411.png" type="image/gif" sizes="16x16">
+  <meta charset="UTF-8">
+  <title>Himel-OP</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+  <style>   
+    body {   
+        margin: 0px;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100vh;
+    }   
+      
+    .jwplayer {   
+        position: relative !important;   
+    }   
+      
+    .jwplayer.jw-flag-aspect-mode {   
+        width: 100%;   
+        height: auto;   
+        max-height: 100%;   
+    }   
+    
+    #telegramButton {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #0088cc;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    #telegramButton:hover {
+        background-color: #006699;
+    }
+
+    #logo {
+        margin-top: 20px;
+        width: 150px; /* Adjust as necessary */
+        height: auto;
+    }
+</style>
+ </head>
+ <body>
+  <script type="text/javascript">    
+    document.addEventListener("DOMContentLoaded", function() {
+        var logo = document.createElement("img");
+        logo.id = "logo";
+        logo.src = "https://i.ibb.co/wrJp3Py/IMG-20231013-133812-411.png";
+        logo.alt = "Logo";
+        document.body.appendChild(logo);
+
+        var playerDiv = document.createElement("div");
+        playerDiv.id = "jwplayerDiv";
+        document.body.appendChild(playerDiv);
+
+        var button = document.createElement("a");
+        button.id = "telegramButton";
+        button.href = "https://t.me/HimelOP_Official";
+        button.target = "_blank";
+        button.textContent = "Join on Telegram";
+        document.body.appendChild(button);
+
+        jwplayer("jwplayerDiv").setup({    
+            file: "https://aba5sdmaaaaaaaamkycwliah6buj4.otte.live.cf.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/tgcrfjcgia/out/v1/7296f026409c4e9ba8844a238628f9ad/cenc.mpd", 
+            autostart: true,
+            volume: 100,
+            mute: false,
+            stretching: "bestfit",
+            width: "100%", 
+            aspectratio: "16:9",
+            type: "dash",    
+            drm: { 
+                "clearkey": {    
+                    "keyId": "d1badeadb11f16bbd0ad7d47914d939e",    
+                    "key": "bd52d185d3537c4c1759db6d66f90f31"    
+                }    
+            }               
+        });
+    });
+</script>
+ </body>
+</html>
